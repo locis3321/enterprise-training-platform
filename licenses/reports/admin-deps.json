@@ -1,0 +1,1289 @@
+{
+  "MIT": [
+    {
+      "name": "@babel/helper-string-parser",
+      "versions": [
+        "7.29.13"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\@babel+helper-string-parser@7.29.13\\node_modules\\@babel\\helper-string-parser"
+      ],
+      "license": "MIT",
+      "author": "The Babel Team",
+      "homepage": "https://babel.dev/docs/en/next/babel-helper-string-parser",
+      "description": "A utility package to parse strings"
+    },
+    {
+      "name": "@babel/helper-validator-identifier",
+      "versions": [
+        "7.29.7"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\@babel+helper-validator-identifier@7.29.7\\node_modules\\@babel\\helper-validator-identifier"
+      ],
+      "license": "MIT",
+      "author": "The Babel Team",
+      "homepage": "https://github.com/babel/babel#readme",
+      "description": "Validate identifier/keywords name"
+    },
+    {
+      "name": "@babel/parser",
+      "versions": [
+        "7.29.13"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\@babel+parser@7.29.13\\node_modules\\@babel\\parser"
+      ],
+      "license": "MIT",
+      "author": "The Babel Team",
+      "homepage": "https://babel.dev/docs/en/next/babel-parser",
+      "description": "A JavaScript parser"
+    },
+    {
+      "name": "@babel/types",
+      "versions": [
+        "7.29.11"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\@babel+types@7.29.11\\node_modules\\@babel\\types"
+      ],
+      "license": "MIT",
+      "author": "The Babel Team",
+      "homepage": "https://babel.dev/docs/en/next/babel-types",
+      "description": "Babel Types is a Lodash-esque utility library for AST nodes"
+    },
+    {
+      "name": "@ctrl/tinycolor",
+      "versions": [
+        "4.3.0"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\@ctrl+tinycolor@4.3.0\\node_modules\\@ctrl\\tinycolor"
+      ],
+      "license": "MIT",
+      "author": "Scott Cooper",
+      "homepage": "https://tinycolor.vercel.app",
+      "description": "Fast, small color manipulation and conversion for JavaScript"
+    },
+    {
+      "name": "@element-plus/icons-vue",
+      "versions": [
+        "2.3.2"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\@element-plus+icons-vue@2.3.2_vue@3.5.45_typescript@5.8.3_\\node_modules\\@element-plus\\icons-vue"
+      ],
+      "license": "MIT",
+      "homepage": "https://element-plus.org/",
+      "description": "Vue components of Element Plus Icons collection."
+    },
+    {
+      "name": "@esbuild/win32-x64",
+      "versions": [
+        "0.21.5"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\@esbuild+win32-x64@0.21.5\\node_modules\\@esbuild\\win32-x64"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/evanw/esbuild#readme",
+      "description": "The Windows 64-bit binary for esbuild, a JavaScript bundler."
+    },
+    {
+      "name": "@floating-ui/core",
+      "versions": [
+        "1.8.0"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\@floating-ui+core@1.8.0\\node_modules\\@floating-ui\\core"
+      ],
+      "license": "MIT",
+      "author": "atomiks",
+      "homepage": "https://floating-ui.com",
+      "description": "Positioning library for floating elements: tooltips, popovers, dropdowns, and more"
+    },
+    {
+      "name": "@floating-ui/dom",
+      "versions": [
+        "1.8.0"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\@floating-ui+dom@1.8.0\\node_modules\\@floating-ui\\dom"
+      ],
+      "license": "MIT",
+      "author": "atomiks",
+      "homepage": "https://floating-ui.com",
+      "description": "Floating UI for the web"
+    },
+    {
+      "name": "@floating-ui/utils",
+      "versions": [
+        "0.2.12"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\@floating-ui+utils@0.2.12\\node_modules\\@floating-ui\\utils"
+      ],
+      "license": "MIT",
+      "author": "atomiks",
+      "homepage": "https://floating-ui.com",
+      "description": "Utilities for Floating UI"
+    },
+    {
+      "name": "@jridgewell/sourcemap-codec",
+      "versions": [
+        "1.6.0"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\@jridgewell+sourcemap-codec@1.6.0\\node_modules\\@jridgewell\\sourcemap-codec"
+      ],
+      "license": "MIT",
+      "author": "Justin Ridgewell",
+      "homepage": "https://github.com/jridgewell/sourcemaps/tree/main/packages/sourcemap-codec",
+      "description": "Encode/decode sourcemap mappings"
+    },
+    {
+      "name": "@rollup/rollup-win32-x64-gnu",
+      "versions": [
+        "4.68.0"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\@rollup+rollup-win32-x64-gnu@4.68.0\\node_modules\\@rollup\\rollup-win32-x64-gnu"
+      ],
+      "license": "MIT",
+      "author": "Lukas Taegert-Atkinson",
+      "homepage": "https://rollupjs.org/",
+      "description": "Native bindings for Rollup"
+    },
+    {
+      "name": "@rollup/rollup-win32-x64-msvc",
+      "versions": [
+        "4.68.0"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\@rollup+rollup-win32-x64-msvc@4.68.0\\node_modules\\@rollup\\rollup-win32-x64-msvc"
+      ],
+      "license": "MIT",
+      "author": "Lukas Taegert-Atkinson",
+      "homepage": "https://rollupjs.org/",
+      "description": "Native bindings for Rollup"
+    },
+    {
+      "name": "@sxzz/popperjs-es",
+      "versions": [
+        "2.11.8"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\@sxzz+popperjs-es@2.11.8\\node_modules\\@sxzz\\popperjs-es"
+      ],
+      "license": "MIT",
+      "author": "Federico Zivolo",
+      "homepage": "https://github.com/popperjs/popper-core#readme",
+      "description": "Tooltip and Popover Positioning Engine"
+    },
+    {
+      "name": "@types/estree",
+      "versions": [
+        "1.0.10"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\@types+estree@1.0.10\\node_modules\\@types\\estree"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/estree",
+      "description": "TypeScript definitions for estree"
+    },
+    {
+      "name": "@types/lodash",
+      "versions": [
+        "4.17.27"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\@types+lodash@4.17.27\\node_modules\\@types\\lodash"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/lodash",
+      "description": "TypeScript definitions for lodash"
+    },
+    {
+      "name": "@types/lodash-es",
+      "versions": [
+        "4.17.12"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\@types+lodash-es@4.17.12\\node_modules\\@types\\lodash-es"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/lodash-es",
+      "description": "TypeScript definitions for lodash-es"
+    },
+    {
+      "name": "@types/node",
+      "versions": [
+        "20.19.43"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\@types+node@20.19.43\\node_modules\\@types\\node"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/node",
+      "description": "TypeScript definitions for node"
+    },
+    {
+      "name": "@types/web-bluetooth",
+      "versions": [
+        "0.0.21"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\@types+web-bluetooth@0.0.21\\node_modules\\@types\\web-bluetooth"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/web-bluetooth",
+      "description": "TypeScript definitions for web-bluetooth"
+    },
+    {
+      "name": "@vitejs/plugin-vue",
+      "versions": [
+        "5.2.4"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\@vitejs+plugin-vue@5.2.4_vi_17abb1e42f96e9a97f4733b5a428be98\\node_modules\\@vitejs\\plugin-vue"
+      ],
+      "license": "MIT",
+      "author": "Evan You",
+      "homepage": "https://github.com/vitejs/vite-plugin-vue/tree/main/packages/plugin-vue#readme"
+    },
+    {
+      "name": "@volar/language-core",
+      "versions": [
+        "2.4.30"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\@volar+language-core@2.4.30\\node_modules\\@volar\\language-core"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/volarjs/volar.js#readme"
+    },
+    {
+      "name": "@volar/language-service",
+      "versions": [
+        "2.4.30"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\@volar+language-service@2.4.30_typescript@5.8.3\\node_modules\\@volar\\language-service"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/volarjs/volar.js#readme"
+    },
+    {
+      "name": "@volar/source-map",
+      "versions": [
+        "2.4.30"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\@volar+source-map@2.4.30\\node_modules\\@volar\\source-map"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/volarjs/volar.js#readme"
+    },
+    {
+      "name": "@volar/typescript",
+      "versions": [
+        "2.4.30"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\@volar+typescript@2.4.30_typescript@5.8.3\\node_modules\\@volar\\typescript"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/volarjs/volar.js#readme"
+    },
+    {
+      "name": "@vue/compiler-core",
+      "versions": [
+        "3.5.45"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\@vue+compiler-core@3.5.45\\node_modules\\@vue\\compiler-core"
+      ],
+      "license": "MIT",
+      "author": "Evan You",
+      "homepage": "https://github.com/vuejs/core/tree/main/packages/compiler-core#readme",
+      "description": "@vue/compiler-core"
+    },
+    {
+      "name": "@vue/compiler-dom",
+      "versions": [
+        "3.5.45"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\@vue+compiler-dom@3.5.45\\node_modules\\@vue\\compiler-dom"
+      ],
+      "license": "MIT",
+      "author": "Evan You",
+      "homepage": "https://github.com/vuejs/core/tree/main/packages/compiler-dom#readme",
+      "description": "@vue/compiler-dom"
+    },
+    {
+      "name": "@vue/compiler-sfc",
+      "versions": [
+        "3.5.45"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\@vue+compiler-sfc@3.5.45\\node_modules\\@vue\\compiler-sfc"
+      ],
+      "license": "MIT",
+      "author": "Evan You",
+      "homepage": "https://github.com/vuejs/core/tree/main/packages/compiler-sfc#readme",
+      "description": "@vue/compiler-sfc"
+    },
+    {
+      "name": "@vue/compiler-ssr",
+      "versions": [
+        "3.5.45"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\@vue+compiler-ssr@3.5.45\\node_modules\\@vue\\compiler-ssr"
+      ],
+      "license": "MIT",
+      "author": "Evan You",
+      "homepage": "https://github.com/vuejs/core/tree/main/packages/compiler-ssr#readme",
+      "description": "@vue/compiler-ssr"
+    },
+    {
+      "name": "@vue/devtools-api",
+      "versions": [
+        "6.6.4"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\@vue+devtools-api@6.6.4\\node_modules\\@vue\\devtools-api"
+      ],
+      "license": "MIT",
+      "author": "Guillaume Chau",
+      "homepage": "https://github.com/vuejs/vue-devtools#readme",
+      "description": "Interact with the Vue devtools from the page"
+    },
+    {
+      "name": "@vue/language-core",
+      "versions": [
+        "3.3.14"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\@vue+language-core@3.3.14\\node_modules\\@vue\\language-core"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/vuejs/language-tools#readme"
+    },
+    {
+      "name": "@vue/reactivity",
+      "versions": [
+        "3.5.45"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\@vue+reactivity@3.5.45\\node_modules\\@vue\\reactivity"
+      ],
+      "license": "MIT",
+      "author": "Evan You",
+      "homepage": "https://github.com/vuejs/core/tree/main/packages/reactivity#readme",
+      "description": "@vue/reactivity"
+    },
+    {
+      "name": "@vue/runtime-core",
+      "versions": [
+        "3.5.45"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\@vue+runtime-core@3.5.45\\node_modules\\@vue\\runtime-core"
+      ],
+      "license": "MIT",
+      "author": "Evan You",
+      "homepage": "https://github.com/vuejs/core/tree/main/packages/runtime-core#readme",
+      "description": "@vue/runtime-core"
+    },
+    {
+      "name": "@vue/runtime-dom",
+      "versions": [
+        "3.5.45"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\@vue+runtime-dom@3.5.45\\node_modules\\@vue\\runtime-dom"
+      ],
+      "license": "MIT",
+      "author": "Evan You",
+      "homepage": "https://github.com/vuejs/core/tree/main/packages/runtime-dom#readme",
+      "description": "@vue/runtime-dom"
+    },
+    {
+      "name": "@vue/server-renderer",
+      "versions": [
+        "3.5.45"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\@vue+server-renderer@3.5.45\\node_modules\\@vue\\server-renderer"
+      ],
+      "license": "MIT",
+      "author": "Evan You",
+      "homepage": "https://github.com/vuejs/core/tree/main/packages/server-renderer#readme",
+      "description": "@vue/server-renderer"
+    },
+    {
+      "name": "@vue/shared",
+      "versions": [
+        "3.5.45"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\@vue+shared@3.5.45\\node_modules\\@vue\\shared"
+      ],
+      "license": "MIT",
+      "author": "Evan You",
+      "homepage": "https://github.com/vuejs/core/tree/main/packages/shared#readme",
+      "description": "internal utils shared across @vue packages"
+    },
+    {
+      "name": "@vueuse/core",
+      "versions": [
+        "15.0.0"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\@vueuse+core@15.0.0_vue@3.5.45_typescript@5.8.3_\\node_modules\\@vueuse\\core"
+      ],
+      "license": "MIT",
+      "author": "Anthony Fu",
+      "homepage": "https://github.com/vueuse/vueuse#readme",
+      "description": "Collection of essential Vue Composition Utilities"
+    },
+    {
+      "name": "@vueuse/metadata",
+      "versions": [
+        "15.0.0"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\@vueuse+metadata@15.0.0\\node_modules\\@vueuse\\metadata"
+      ],
+      "license": "MIT",
+      "author": "Anthony Fu",
+      "homepage": "https://github.com/vueuse/vueuse/tree/main/packages/metadata#readme",
+      "description": "Metadata for VueUse functions"
+    },
+    {
+      "name": "@vueuse/shared",
+      "versions": [
+        "15.0.0"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\@vueuse+shared@15.0.0_vue@3.5.45_typescript@5.8.3_\\node_modules\\@vueuse\\shared"
+      ],
+      "license": "MIT",
+      "author": "Anthony Fu",
+      "homepage": "https://github.com/vueuse/vueuse/tree/main/packages/shared#readme"
+    },
+    {
+      "name": "agent-base",
+      "versions": [
+        "6.0.2"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\agent-base@6.0.2\\node_modules\\agent-base"
+      ],
+      "license": "MIT",
+      "author": "Nathan Rajlich",
+      "homepage": "https://github.com/TooTallNate/node-agent-base#readme",
+      "description": "Turn a function into an `http.Agent` instance"
+    },
+    {
+      "name": "alien-signals",
+      "versions": [
+        "3.2.1"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\alien-signals@3.2.1\\node_modules\\alien-signals"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/stackblitz/alien-signals#readme",
+      "description": "The lightest signal library."
+    },
+    {
+      "name": "async-validator",
+      "versions": [
+        "4.2.5"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\async-validator@4.2.5\\node_modules\\async-validator"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/yiminghe/async-validator",
+      "description": "validate form asynchronous"
+    },
+    {
+      "name": "asynckit",
+      "versions": [
+        "0.4.0"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\asynckit@0.4.0\\node_modules\\asynckit"
+      ],
+      "license": "MIT",
+      "author": "Alex Indigo",
+      "homepage": "https://github.com/alexindigo/asynckit#readme",
+      "description": "Minimal async jobs utility library, with streams support"
+    },
+    {
+      "name": "axios",
+      "versions": [
+        "1.21.0"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\axios@1.21.0\\node_modules\\axios"
+      ],
+      "license": "MIT",
+      "author": "Matt Zabriskie",
+      "homepage": "https://axios-http.com",
+      "description": "Promise based HTTP client for the browser and node.js"
+    },
+    {
+      "name": "call-bind-apply-helpers",
+      "versions": [
+        "1.0.2"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\call-bind-apply-helpers@1.0.2\\node_modules\\call-bind-apply-helpers"
+      ],
+      "license": "MIT",
+      "author": "Jordan Harband",
+      "homepage": "https://github.com/ljharb/call-bind-apply-helpers#readme",
+      "description": "Helper functions around Function call/apply/bind, for use in `call-bind`"
+    },
+    {
+      "name": "combined-stream",
+      "versions": [
+        "1.0.8"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\combined-stream@1.0.8\\node_modules\\combined-stream"
+      ],
+      "license": "MIT",
+      "author": "Felix Geisendörfer",
+      "homepage": "https://github.com/felixge/node-combined-stream",
+      "description": "A stream that emits multiple other streams one after another."
+    },
+    {
+      "name": "csstype",
+      "versions": [
+        "3.2.3"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\csstype@3.2.3\\node_modules\\csstype"
+      ],
+      "license": "MIT",
+      "author": "Fredrik Nicol",
+      "homepage": "https://github.com/frenic/csstype#readme",
+      "description": "Strict TypeScript and Flow types for style based on MDN data"
+    },
+    {
+      "name": "dayjs",
+      "versions": [
+        "1.11.23"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\dayjs@1.11.23\\node_modules\\dayjs"
+      ],
+      "license": "MIT",
+      "author": "iamkun",
+      "homepage": "https://day.js.org",
+      "description": "2KB immutable date time library alternative to Moment.js with the same modern API "
+    },
+    {
+      "name": "debug",
+      "versions": [
+        "4.4.3"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\debug@4.4.3\\node_modules\\debug"
+      ],
+      "license": "MIT",
+      "author": "Josh Junon",
+      "homepage": "https://github.com/debug-js/debug#readme",
+      "description": "Lightweight debugging utility for Node.js and the browser"
+    },
+    {
+      "name": "delayed-stream",
+      "versions": [
+        "1.0.0"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\delayed-stream@1.0.0\\node_modules\\delayed-stream"
+      ],
+      "license": "MIT",
+      "author": "Felix Geisendörfer",
+      "homepage": "https://github.com/felixge/node-delayed-stream",
+      "description": "Buffers events from a stream until you are ready to handle them."
+    },
+    {
+      "name": "dunder-proto",
+      "versions": [
+        "1.0.1"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\dunder-proto@1.0.1\\node_modules\\dunder-proto"
+      ],
+      "license": "MIT",
+      "author": "Jordan Harband",
+      "homepage": "https://github.com/es-shims/dunder-proto#readme",
+      "description": "If available, the `Object.prototype.__proto__` accessor and mutator, call-bound"
+    },
+    {
+      "name": "element-plus",
+      "versions": [
+        "2.14.8"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\element-plus@2.14.8_vue@3.5.45_typescript@5.8.3_\\node_modules\\element-plus"
+      ],
+      "license": "MIT",
+      "homepage": "https://element-plus.org/",
+      "description": "A Component Library for Vue 3"
+    },
+    {
+      "name": "es-define-property",
+      "versions": [
+        "1.0.1"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\es-define-property@1.0.1\\node_modules\\es-define-property"
+      ],
+      "license": "MIT",
+      "author": "Jordan Harband",
+      "homepage": "https://github.com/ljharb/es-define-property#readme",
+      "description": "`Object.defineProperty`, but not IE 8's broken one."
+    },
+    {
+      "name": "es-errors",
+      "versions": [
+        "1.3.0"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\es-errors@1.3.0\\node_modules\\es-errors"
+      ],
+      "license": "MIT",
+      "author": "Jordan Harband",
+      "homepage": "https://github.com/ljharb/es-errors#readme",
+      "description": "A simple cache for a few of the JS Error constructors."
+    },
+    {
+      "name": "es-object-atoms",
+      "versions": [
+        "1.1.2"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\es-object-atoms@1.1.2\\node_modules\\es-object-atoms"
+      ],
+      "license": "MIT",
+      "author": "Jordan Harband",
+      "homepage": "https://github.com/ljharb/es-object-atoms#readme",
+      "description": "ES Object-related atoms: Object, ToObject, RequireObjectCoercible"
+    },
+    {
+      "name": "es-set-tostringtag",
+      "versions": [
+        "2.1.0"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\es-set-tostringtag@2.1.0\\node_modules\\es-set-tostringtag"
+      ],
+      "license": "MIT",
+      "author": "Jordan Harband",
+      "homepage": "https://github.com/es-shims/es-set-tostringtag#readme",
+      "description": "A helper to optimistically set Symbol.toStringTag, when possible."
+    },
+    {
+      "name": "esbuild",
+      "versions": [
+        "0.21.5"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\esbuild@0.21.5\\node_modules\\esbuild"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/evanw/esbuild#readme",
+      "description": "An extremely fast JavaScript and CSS bundler and minifier."
+    },
+    {
+      "name": "estree-walker",
+      "versions": [
+        "2.0.2"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\estree-walker@2.0.2\\node_modules\\estree-walker"
+      ],
+      "license": "MIT",
+      "author": "Rich Harris",
+      "homepage": "https://github.com/Rich-Harris/estree-walker#readme",
+      "description": "Traverse an ESTree-compliant AST"
+    },
+    {
+      "name": "follow-redirects",
+      "versions": [
+        "1.16.3"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\follow-redirects@1.16.3\\node_modules\\follow-redirects"
+      ],
+      "license": "MIT",
+      "author": "Ruben Verborgh",
+      "homepage": "https://github.com/follow-redirects/follow-redirects",
+      "description": "HTTP and HTTPS modules that follow redirects."
+    },
+    {
+      "name": "form-data",
+      "versions": [
+        "4.0.6"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\form-data@4.0.6\\node_modules\\form-data"
+      ],
+      "license": "MIT",
+      "author": "Felix Geisendörfer",
+      "homepage": "https://github.com/form-data/form-data#readme",
+      "description": "A library to create readable \"multipart/form-data\" streams. Can be used to submit forms and file uploads to other web applications."
+    },
+    {
+      "name": "function-bind",
+      "versions": [
+        "1.1.2"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\function-bind@1.1.2\\node_modules\\function-bind"
+      ],
+      "license": "MIT",
+      "author": "Raynos",
+      "homepage": "https://github.com/Raynos/function-bind",
+      "description": "Implementation of Function.prototype.bind"
+    },
+    {
+      "name": "get-intrinsic",
+      "versions": [
+        "1.3.0"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\get-intrinsic@1.3.0\\node_modules\\get-intrinsic"
+      ],
+      "license": "MIT",
+      "author": "Jordan Harband",
+      "homepage": "https://github.com/ljharb/get-intrinsic#readme",
+      "description": "Get and robustly cache all JS language-level intrinsics at first require time"
+    },
+    {
+      "name": "get-proto",
+      "versions": [
+        "1.0.1"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\get-proto@1.0.1\\node_modules\\get-proto"
+      ],
+      "license": "MIT",
+      "author": "Jordan Harband",
+      "homepage": "https://github.com/ljharb/get-proto#readme",
+      "description": "Robustly get the [[Prototype]] of an object"
+    },
+    {
+      "name": "gopd",
+      "versions": [
+        "1.2.0"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\gopd@1.2.0\\node_modules\\gopd"
+      ],
+      "license": "MIT",
+      "author": "Jordan Harband",
+      "homepage": "https://github.com/ljharb/gopd#readme",
+      "description": "`Object.getOwnPropertyDescriptor`, but accounts for IE's broken implementation."
+    },
+    {
+      "name": "has-symbols",
+      "versions": [
+        "1.1.0"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\has-symbols@1.1.0\\node_modules\\has-symbols"
+      ],
+      "license": "MIT",
+      "author": "Jordan Harband",
+      "homepage": "https://github.com/ljharb/has-symbols#readme",
+      "description": "Determine if the JS environment has Symbol support. Supports spec, or shams."
+    },
+    {
+      "name": "has-tostringtag",
+      "versions": [
+        "1.0.2"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\has-tostringtag@1.0.2\\node_modules\\has-tostringtag"
+      ],
+      "license": "MIT",
+      "author": "Jordan Harband",
+      "homepage": "https://github.com/inspect-js/has-tostringtag#readme",
+      "description": "Determine if the JS environment has `Symbol.toStringTag` support. Supports spec, or shams."
+    },
+    {
+      "name": "hasown",
+      "versions": [
+        "2.0.4"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\hasown@2.0.4\\node_modules\\hasown"
+      ],
+      "license": "MIT",
+      "author": "Jordan Harband",
+      "homepage": "https://github.com/inspect-js/hasOwn#readme",
+      "description": "A robust, ES3 compatible, \"has own property\" predicate."
+    },
+    {
+      "name": "https-proxy-agent",
+      "versions": [
+        "5.0.1"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\https-proxy-agent@5.0.1\\node_modules\\https-proxy-agent"
+      ],
+      "license": "MIT",
+      "author": "Nathan Rajlich",
+      "homepage": "https://github.com/TooTallNate/node-https-proxy-agent#readme",
+      "description": "An HTTP(s) proxy `http.Agent` implementation for HTTPS"
+    },
+    {
+      "name": "lodash",
+      "versions": [
+        "4.18.1"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\lodash@4.18.1\\node_modules\\lodash"
+      ],
+      "license": "MIT",
+      "author": "John-David Dalton",
+      "homepage": "https://lodash.com/",
+      "description": "Lodash modular utilities."
+    },
+    {
+      "name": "lodash-es",
+      "versions": [
+        "4.18.1"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\lodash-es@4.18.1\\node_modules\\lodash-es"
+      ],
+      "license": "MIT",
+      "author": "John-David Dalton",
+      "homepage": "https://lodash.com/custom-builds",
+      "description": "Lodash exported as ES modules."
+    },
+    {
+      "name": "lodash-unified",
+      "versions": [
+        "1.0.3"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\lodash-unified@1.0.3_@types_168785b94d783e1b7a7274df40d5f9d9\\node_modules\\lodash-unified"
+      ],
+      "license": "MIT",
+      "author": "Jack Works",
+      "description": "A union entrypoint of lodash for both ESModule and Commonjs."
+    },
+    {
+      "name": "magic-string",
+      "versions": [
+        "0.30.21"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\magic-string@0.30.21\\node_modules\\magic-string"
+      ],
+      "license": "MIT",
+      "author": "Rich Harris",
+      "homepage": "https://github.com/Rich-Harris/magic-string#readme",
+      "description": "Modify strings, generate sourcemaps"
+    },
+    {
+      "name": "math-intrinsics",
+      "versions": [
+        "1.1.0"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\math-intrinsics@1.1.0\\node_modules\\math-intrinsics"
+      ],
+      "license": "MIT",
+      "author": "Jordan Harband",
+      "homepage": "https://github.com/es-shims/math-intrinsics#readme",
+      "description": "ES Math-related intrinsics and helpers, robustly cached."
+    },
+    {
+      "name": "memoize-one",
+      "versions": [
+        "6.0.0"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\memoize-one@6.0.0\\node_modules\\memoize-one"
+      ],
+      "license": "MIT",
+      "author": "Alex Reardon",
+      "homepage": "https://github.com/alexreardon/memoize-one#readme",
+      "description": "A memoization library which only remembers the latest invocation"
+    },
+    {
+      "name": "mime-db",
+      "versions": [
+        "1.52.0"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\mime-db@1.52.0\\node_modules\\mime-db"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/jshttp/mime-db#readme",
+      "description": "Media Type Database"
+    },
+    {
+      "name": "mime-types",
+      "versions": [
+        "2.1.35"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\mime-types@2.1.35\\node_modules\\mime-types"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/jshttp/mime-types#readme",
+      "description": "The ultimate javascript content-type utility."
+    },
+    {
+      "name": "ms",
+      "versions": [
+        "2.1.3"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\ms@2.1.3\\node_modules\\ms"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/vercel/ms#readme",
+      "description": "Tiny millisecond conversion utility"
+    },
+    {
+      "name": "muggle-string",
+      "versions": [
+        "0.4.1"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\muggle-string@0.4.1\\node_modules\\muggle-string"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/johnsoncodehk/muggle-string#readme"
+    },
+    {
+      "name": "nanoid",
+      "versions": [
+        "3.3.20"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\nanoid@3.3.20\\node_modules\\nanoid"
+      ],
+      "license": "MIT",
+      "author": "Andrey Sitnik",
+      "homepage": "https://github.com/ai/nanoid#readme",
+      "description": "A tiny (116 bytes), secure URL-friendly unique string ID generator"
+    },
+    {
+      "name": "path-browserify",
+      "versions": [
+        "1.0.1"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\path-browserify@1.0.1\\node_modules\\path-browserify"
+      ],
+      "license": "MIT",
+      "author": "James Halliday",
+      "homepage": "https://github.com/browserify/path-browserify",
+      "description": "the path module from node core for browsers"
+    },
+    {
+      "name": "picomatch",
+      "versions": [
+        "4.0.7"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\picomatch@4.0.7\\node_modules\\picomatch"
+      ],
+      "license": "MIT",
+      "author": "Jon Schlinkert",
+      "homepage": "https://github.com/micromatch/picomatch",
+      "description": "Blazing fast and accurate glob matcher written in JavaScript, with no dependencies and full support for standard and extended Bash glob features, including braces, extglobs, POSIX brackets, and regular expressions."
+    },
+    {
+      "name": "pinia",
+      "versions": [
+        "2.3.1"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\pinia@2.3.1_typescript@5.8.3_vue@3.5.45_typescript@5.8.3_\\node_modules\\pinia"
+      ],
+      "license": "MIT",
+      "author": "Eduardo San Martin Morote",
+      "homepage": "https://github.com/vuejs/pinia#readme",
+      "description": "Intuitive, type safe and flexible Store for Vue"
+    },
+    {
+      "name": "postcss",
+      "versions": [
+        "8.5.32"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\postcss@8.5.32\\node_modules\\postcss"
+      ],
+      "license": "MIT",
+      "author": "Andrey Sitnik",
+      "homepage": "https://postcss.org/",
+      "description": "Tool for transforming styles with JS plugins"
+    },
+    {
+      "name": "proxy-from-env",
+      "versions": [
+        "2.1.0"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\proxy-from-env@2.1.0\\node_modules\\proxy-from-env"
+      ],
+      "license": "MIT",
+      "author": "Rob Wu",
+      "homepage": "https://github.com/Rob--W/proxy-from-env#readme",
+      "description": "Offers getProxyForUrl to get the proxy URL for a URL, respecting the *_PROXY (e.g. HTTP_PROXY) and NO_PROXY environment variables."
+    },
+    {
+      "name": "rollup",
+      "versions": [
+        "4.68.0"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\rollup@4.68.0\\node_modules\\rollup"
+      ],
+      "license": "MIT",
+      "author": "Rich Harris",
+      "homepage": "https://rollupjs.org/",
+      "description": "Next-generation ES module bundler"
+    },
+    {
+      "name": "undici-types",
+      "versions": [
+        "6.21.0"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\undici-types@6.21.0\\node_modules\\undici-types"
+      ],
+      "license": "MIT",
+      "homepage": "https://undici.nodejs.org",
+      "description": "A stand-alone types package for Undici"
+    },
+    {
+      "name": "vite",
+      "versions": [
+        "5.4.21"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\vite@5.4.21_@types+node@20.19.43\\node_modules\\vite"
+      ],
+      "license": "MIT",
+      "author": "Evan You",
+      "homepage": "https://vite.dev",
+      "description": "Native-ESM powered web dev build tool"
+    },
+    {
+      "name": "vscode-jsonrpc",
+      "versions": [
+        "10.0.0"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\vscode-jsonrpc@10.0.0\\node_modules\\vscode-jsonrpc"
+      ],
+      "license": "MIT",
+      "author": "Microsoft Corporation",
+      "homepage": "https://github.com/microsoft/vscode-languageserver-node/tree/main/jsonrpc",
+      "description": "A json rpc implementation over streams"
+    },
+    {
+      "name": "vscode-languageserver-protocol",
+      "versions": [
+        "3.18.5"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\vscode-languageserver-protocol@3.18.5\\node_modules\\vscode-languageserver-protocol"
+      ],
+      "license": "MIT",
+      "author": "Microsoft Corporation",
+      "homepage": "https://github.com/microsoft/vscode-languageserver-node/tree/main/protocol",
+      "description": "VSCode Language Server Protocol implementation"
+    },
+    {
+      "name": "vscode-languageserver-textdocument",
+      "versions": [
+        "1.0.16"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\vscode-languageserver-textdocument@1.0.16\\node_modules\\vscode-languageserver-textdocument"
+      ],
+      "license": "MIT",
+      "author": "Microsoft Corporation",
+      "homepage": "https://github.com/microsoft/vscode-languageserver-node/tree/main/textDocument",
+      "description": "A simple text document implementation for Node LSP servers"
+    },
+    {
+      "name": "vscode-languageserver-types",
+      "versions": [
+        "3.18.5"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\vscode-languageserver-types@3.18.5\\node_modules\\vscode-languageserver-types"
+      ],
+      "license": "MIT",
+      "author": "Microsoft Corporation",
+      "homepage": "https://github.com/microsoft/vscode-languageserver-node/tree/main/types",
+      "description": "Types used by the Language server for node"
+    },
+    {
+      "name": "vscode-uri",
+      "versions": [
+        "3.2.0"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\vscode-uri@3.2.0\\node_modules\\vscode-uri"
+      ],
+      "license": "MIT",
+      "author": "Microsoft",
+      "homepage": "https://github.com/microsoft/vscode-uri#readme",
+      "description": "The URI implementation that is used by VS Code and its extensions"
+    },
+    {
+      "name": "vue",
+      "versions": [
+        "3.5.45"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\vue@3.5.45_typescript@5.8.3\\node_modules\\vue"
+      ],
+      "license": "MIT",
+      "author": "Evan You",
+      "homepage": "https://vuejs.org/",
+      "description": "The progressive JavaScript framework for building modern web UI."
+    },
+    {
+      "name": "vue-component-type-helpers",
+      "versions": [
+        "3.3.14"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\vue-component-type-helpers@3.3.14\\node_modules\\vue-component-type-helpers"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/vuejs/language-tools#readme"
+    },
+    {
+      "name": "vue-demi",
+      "versions": [
+        "0.14.10"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\vue-demi@0.14.10_vue@3.5.45_typescript@5.8.3_\\node_modules\\vue-demi"
+      ],
+      "license": "MIT",
+      "author": "Anthony Fu",
+      "homepage": "https://github.com/antfu/vue-demi#readme"
+    },
+    {
+      "name": "vue-router",
+      "versions": [
+        "4.6.4"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\vue-router@4.6.4_vue@3.5.45_typescript@5.8.3_\\node_modules\\vue-router"
+      ],
+      "license": "MIT",
+      "author": "Eduardo San Martin Morote",
+      "homepage": "https://router.vuejs.org"
+    },
+    {
+      "name": "vue-tsc",
+      "versions": [
+        "3.3.14"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\vue-tsc@3.3.14_typescript@5.8.3\\node_modules\\vue-tsc"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/vuejs/language-tools#readme"
+    }
+  ],
+  "BSD-2-Clause": [
+    {
+      "name": "entities",
+      "versions": [
+        "7.0.1"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\entities@7.0.1\\node_modules\\entities"
+      ],
+      "license": "BSD-2-Clause",
+      "author": "Felix Boehm",
+      "homepage": "https://github.com/fb55/entities#readme",
+      "description": "Encode & decode XML and HTML entities with ease & speed"
+    }
+  ],
+  "BSD-3-Clause": [
+    {
+      "name": "normalize-wheel-es",
+      "versions": [
+        "1.2.0"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\normalize-wheel-es@1.2.0\\node_modules\\normalize-wheel-es"
+      ],
+      "license": "BSD-3-Clause",
+      "author": "Bas Stottelaar",
+      "homepage": "https://github.com/sxzz/normalize-wheel-es#readme",
+      "description": "Mouse wheel normalization across multiple multiple browsers."
+    },
+    {
+      "name": "source-map-js",
+      "versions": [
+        "1.2.2"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\source-map-js@1.2.2\\node_modules\\source-map-js"
+      ],
+      "license": "BSD-3-Clause",
+      "author": "Valentin 7rulnik Semirulnik",
+      "homepage": "https://github.com/7rulnik/source-map-js",
+      "description": "Generates and consumes source maps"
+    }
+  ],
+  "ISC": [
+    {
+      "name": "picocolors",
+      "versions": [
+        "1.1.1"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\picocolors@1.1.1\\node_modules\\picocolors"
+      ],
+      "license": "ISC",
+      "author": "Alexey Raspopov",
+      "homepage": "https://github.com/alexeyraspopov/picocolors#readme",
+      "description": "The tiniest and the fastest library for terminal output formatting with ANSI colors"
+    }
+  ],
+  "Apache-2.0": [
+    {
+      "name": "typescript",
+      "versions": [
+        "5.8.3"
+      ],
+      "paths": [
+        "D:\\work\\insurance-training\\apps\\admin\\node_modules\\.pnpm\\typescript@5.8.3\\node_modules\\typescript"
+      ],
+      "license": "Apache-2.0",
+      "author": "Microsoft Corp.",
+      "homepage": "https://www.typescriptlang.org/",
+      "description": "TypeScript is a language for application scale JavaScript development"
+    }
+  ]
+}

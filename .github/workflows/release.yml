@@ -1,0 +1,85 @@
+name: Release
+
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+    inputs:
+      version:
+        description: '要发布的版本号，例如 v0.1.0（留空则使用当前分支名）'
+        required: false
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    name: 构建三端产物
+    uses: ./.github/workflows/ci.yml
+
+  release:
+    name: 发布 Release
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: 解析版本号
+        id: ver
+        run: |
+          VERSION="${{ github.event.inputs.version || github.ref_name }}"
+          echo "version=${VERSION}" >> "$GITHUB_OUTPUT"
+          echo "发布版本：${VERSION}"
+
+      - uses: actions/download-artifact@v4
+        with:
+          path: artifacts
+
+      - name: 打包产物
+        run: |
+          set -euo pipefail
+          VERSION="${{ steps.ver.outputs.version }}"
+          cd artifacts
+          tar -czf "../enterprise-training-platform-${VERSION}-backend.tar.gz" backend-jar
+          tar -czf "../enterprise-training-platform-${VERSION}-admin.tar.gz" admin-dist
+          tar -czf "../enterprise-training-platform-${VERSION}-miniapp.tar.gz" miniapp-dist
+          cd ..
+          ls -lh ./*.tar.gz
+
+      - name: 校验产物
+        run: |
+          set -euo pipefail
+          VERSION="${{ steps.ver.outputs.version }}"
+          tar -tzf "enterprise-training-platform-${VERSION}-backend.tar.gz" > /tmp/backend.list
+          tar -tzf "enterprise-training-platform-${VERSION}-admin.tar.gz" > /tmp/admin.list
+          tar -tzf "enterprise-training-platform-${VERSION}-miniapp.tar.gz" > /tmp/miniapp.list
+          grep -q '\.jar$' /tmp/backend.list
+          grep -q 'index.html' /tmp/admin.list
+          grep -q 'app.json' /tmp/miniapp.list
+          echo '三个产物内容校验通过'
+
+      - name: 发布
+        uses: softprops/action-gh-release@v2
+        with:
+          name: ${{ steps.ver.outputs.version }}
+          tag_name: ${{ steps.ver.outputs.version }}
+          generate_release_notes: true
+          fail_on_unmatched_files: true
+          files: |
+            enterprise-training-platform-${{ steps.ver.outputs.version }}-backend.tar.gz
+            enterprise-training-platform-${{ steps.ver.outputs.version }}-admin.tar.gz
+            enterprise-training-platform-${{ steps.ver.outputs.version }}-miniapp.tar.gz
+          body: |
+            ## 企业内训平台 ${{ steps.ver.outputs.version }}
+
+            本版本由 GitHub Actions 自动构建，产物来自 tag `${{ steps.ver.outputs.version }}` 对应的提交。
+
+            | 产物 | 内容 | 使用方式 |
+            |---|---|---|
+            | `*-backend.tar.gz` | Spring Boot 后端可执行 jar | `java -jar` 启动，配置项见 `docs/DEPLOYMENT.md` |
+            | `*-admin.tar.gz` | 管理端静态资源（`dist/`，按 `/admin/` 子路径构建） | 部署到 Nginx 站点目录，API 反代到后端 |
+            | `*-miniapp.tar.gz` | 微信小程序产物（`dist/build/mp-weixin/`） | 用微信开发者工具导入该目录 |
+
+            > 小程序产物使用占位 AppID 构建，仅供体验与二次开发；正式发布前需在
+            > `apps/miniapp/env/.env` 填入自有 AppID 并重新构建。
+
+            部署与环境变量说明见仓库内 [`docs/DEPLOYMENT.md`](https://github.com/${{ github.repository }}/blob/${{ steps.ver.outputs.version }}/docs/DEPLOYMENT.md)。

@@ -1,0 +1,29 @@
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+.idea/
+.vscode/
+node_modules/
+dist/
+target/
+coverage/
+.playwright/
+test-results/
+# 锚定根目录：避免匹配 Java 包名等任意层级的 storage 目录
+/storage/
+/uploads/
+*.pem
+*.key
+secrets/
+.workbuddy/
+
+# 本地个人小程序模板（含真实 AppID/AppSecret，禁止入库）
+/apps/anzhi/
+
+# IDE / RepoWiki 生成物
+.qoder/
+
+# 隐私协议 PDF 生成脚本（产物 privacy-policy.pdf 纳入版本管理，便于复现线上内容）
+/_gen_privacy.py

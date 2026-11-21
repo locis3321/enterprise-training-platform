@@ -1,0 +1,49 @@
+# 统一换行策略：仓库内一律存 LF，检出时由 git 按平台转换。
+# 目的：避免 Windows（core.autocrlf=true）与 Linux/macOS 协作时，
+# 同一文件在 diff 中反复出现整文件换行变更。
+* text=auto eol=lf
+
+# 明确按二进制处理，禁止换行转换（图片、字体、压缩包、Office 文档）
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.ico  binary
+*.webp binary
+*.svg  text eol=lf
+*.woff  binary
+*.woff2 binary
+*.ttf   binary
+*.otf   binary
+*.eot   binary
+*.zip   binary
+*.jar   binary
+*.xlsx  binary
+*.xls   binary
+*.pdf   binary
+
+# 脚本：保持 LF，否则在 Linux 容器/WSL 中执行会因 CR 报错
+*.sh   text eol=lf
+*.mjs  text eol=lf
+*.cjs  text eol=lf
+*.bash text eol=lf
+
+# Windows 批处理必须是 CRLF
+*.bat  text eol=crlf
+*.cmd  text eol=crlf
+*.ps1  text eol=crlf
+
+# SQL 迁移由 Flyway 按原样读取，统一 LF 避免校验和/换行差异
+*.sql  text eol=lf
+
+# 配置文件
+*.yml  text eol=lf
+*.yaml text eol=lf
+*.json text eol=lf
+*.md   text eol=lf
+
+# Git 自身与锁文件
+.gitattributes text eol=lf
+.gitignore     text eol=lf
+pnpm-lock.yaml -text
+package-lock.json -text

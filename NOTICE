@@ -1,0 +1,15 @@
+企业内训平台（Enterprise Training Platform）
+Copyright 2026 locis3321
+
+本产品依据 Apache License, Version 2.0 发布，许可证全文见根目录 LICENSE。
+本文件依该许可证第 4(d) 条编制，登记本产品中包含的第三方组件署名。
+
+本产品包含以下第三方组件的源代码，版权归原作者所有：
+
+  uni-app / unibest 模板（apps/miniapp 目录）
+    Copyright (c) 2025 菲鸽
+    依据 MIT 许可证授权，许可证全文见 apps/miniapp/LICENSE
+    对上游模板的改动记录见 apps/miniapp/UPSTREAM.md
+
+全部第三方依赖的清单、版本、许可证、义务与本项目对双许可包所选择的分支，
+见 licenses/third-party-notices.md。

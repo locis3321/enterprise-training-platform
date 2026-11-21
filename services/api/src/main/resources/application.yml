@@ -1,0 +1,97 @@
+server:
+  port: ${SERVER_PORT:8080}
+  shutdown: graceful
+
+spring:
+  application:
+    name: insurance-training-api
+  profiles:
+    active: ${APP_ENV:local}
+  jackson:
+    time-zone: Asia/Shanghai
+    default-property-inclusion: non_null
+    serialization:
+      write-dates-as-timestamps: false
+    deserialization:
+      fail-on-unknown-properties: false
+  servlet:
+    multipart:
+      # 视频上限 1GB（Task 03 决策）；request 含 multipart 边界与表单开销，故额外放宽
+      max-file-size: 1GB
+      max-request-size: 1030MB
+  data:
+    redis:
+      host: ${REDIS_HOST:127.0.0.1}
+      port: ${REDIS_PORT:6379}
+      password: ${REDIS_PASSWORD:}
+      timeout: 3s
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+    baseline-on-migrate: false
+    validate-on-migrate: true
+    clean-disabled: true
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+  global-config:
+    banner: false
+    db-config:
+      id-type: auto
+      logic-delete-field: deleted
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      probes:
+        enabled: true
+      show-details: when-authorized
+
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    operations-sorter: method
+
+app:
+  timezone: Asia/Shanghai
+  page:
+    max-size: 200
+  jwt:
+    # 生产环境必须由 APP_JWT_SECRET 提供（≥32 字节）；local profile 有显式的开发用默认值
+    secret: ${APP_JWT_SECRET:}
+    ttl: PT168H
+  login:
+    max-failures: 5
+    failure-window: PT5M
+  wechat:
+    appid: ${WECHAT_APPID:touristappid}
+    bind-ticket-ttl: PT5M
+  storage:
+    # 生产必须由环境变量提供；缺失时 StorageConfig 拒绝启动
+    endpoint: ${MINIO_ENDPOINT:}
+    access-key: ${MINIO_ACCESS_KEY:}
+    secret-key: ${MINIO_SECRET_KEY:}
+    bucket: ${MINIO_BUCKET:training-private}
+    # 客户端（小程序/浏览器）可访问的地址；与服务端 endpoint 不同时必须显式配置
+    public-endpoint: ${MINIO_PUBLIC_ENDPOINT:}
+    # 视频需覆盖 1 小时连续播放，留出缓冲余量
+    presign-ttl-video: PT90M
+    presign-ttl-file: PT10M
+    max-video-size: 1GB
+    max-other-size: 50MB
+
+logging:
+  pattern:
+    # 把 traceId 打到每行日志，便于按请求串起来排查
+    level: "%5p [%X{traceId:-}]"
+  level:
+    root: info

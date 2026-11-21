@@ -1,0 +1,92 @@
+# 本地开发依赖编排（仅 MySQL / Redis / MinIO，不含应用服务）
+# 使用：cp .env.example .env && docker compose -f docker-compose.dev.yml up -d
+# 说明：应用服务（Spring Boot / 管理端 / 小程序）在宿主机上跑，便于热重载与断点调试。
+name: insurance-training
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: insurance-training-mysql
+    restart: unless-stopped
+    command:
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_0900_ai_ci
+      - --default-time-zone=+08:00
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:?请在 .env 中设置 MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE:-insurance_training}
+      MYSQL_USER: ${MYSQL_USERNAME:-app}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD:?请在 .env 中设置 MYSQL_PASSWORD}
+      TZ: Asia/Shanghai
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql-data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD-SHELL", "mysqladmin ping -h 127.0.0.1 -uroot -p$$MYSQL_ROOT_PASSWORD --silent"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+      start_period: 40s
+
+  redis:
+    image: redis:7
+    container_name: insurance-training-redis
+    restart: unless-stopped
+    command: ["redis-server", "--appendonly", "yes"]
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 3s
+      retries: 6
+
+  minio:
+    # 已本地验证的版本：RELEASE.2025-08-13T08-35-41Z（image id a16cad481969）
+    # 注意：minio/mc 已不再提供 latest 标签，故 minio-init 复用本镜像自带的 mc 二进制
+    image: minio/minio:latest
+    container_name: insurance-training-minio
+    restart: unless-stopped
+    command: server /data --console-address ":9001"
+    environment:
+      MINIO_ROOT_USER: ${MINIO_ACCESS_KEY:?请在 .env 中设置 MINIO_ACCESS_KEY}
+      MINIO_ROOT_PASSWORD: ${MINIO_SECRET_KEY:?请在 .env 中设置 MINIO_SECRET_KEY}
+      TZ: Asia/Shanghai
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    volumes:
+      - minio-data:/data
+    healthcheck:
+      test: ["CMD", "mc", "ready", "local"]
+      interval: 10s
+      timeout: 5s
+      retries: 6
+      start_period: 20s
+
+  # 一次性任务：创建私有桶（学员资料禁止放在公开桶）
+  minio-init:
+    image: minio/minio:latest
+    depends_on:
+      minio:
+        condition: service_healthy
+    entrypoint: >
+      /bin/sh -c "
+      mc alias set local http://minio:9000 $${MINIO_ROOT_USER} $${MINIO_ROOT_PASSWORD} &&
+      mc mb --ignore-existing local/${MINIO_BUCKET:-training-private} &&
+      mc anonymous set none local/${MINIO_BUCKET:-training-private} &&
+      echo 'bucket ready (private)';
+      "
+    environment:
+      MINIO_ROOT_USER: ${MINIO_ACCESS_KEY}
+      MINIO_ROOT_PASSWORD: ${MINIO_SECRET_KEY}
+      MINIO_BUCKET: ${MINIO_BUCKET:-training-private}
+    restart: "no"
+
+volumes:
+  mysql-data:
+  redis-data:
+  minio-data:

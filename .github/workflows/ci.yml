@@ -1,0 +1,136 @@
+name: CI
+
+on:
+  push:
+    branches: [master]
+    tags-ignore: ['v*']
+  pull_request:
+    branches: [master]
+  workflow_dispatch:
+  workflow_call:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  NODE_VERSION: '20'
+  PNPM_VERSION: '10.10.0'
+  JAVA_VERSION: '21'
+
+jobs:
+  backend:
+    name: 后端（编译 + 单元测试）
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: ${{ env.JAVA_VERSION }}
+          cache: maven
+
+      - name: 单元测试
+        run: mvn -B -f services/api/pom.xml test
+
+      - name: 打包
+        run: mvn -B -f services/api/pom.xml clean package -DskipTests
+
+      - name: 校验产物
+        run: |
+          set -euo pipefail
+          ls -lh services/api/target/*.jar
+          test "$(find services/api/target -maxdepth 1 -name '*.jar' | wc -l)" -ge 1
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: backend-jar
+          path: services/api/target/*.jar
+          if-no-files-found: error
+
+  admin:
+    name: 管理端（类型检查 + 构建）
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: ${{ env.PNPM_VERSION }}
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: pnpm
+          cache-dependency-path: apps/admin/pnpm-lock.yaml
+
+      - name: 安装依赖
+        run: pnpm install --frozen-lockfile
+        working-directory: apps/admin
+
+      - name: 构建
+        run: pnpm build
+        working-directory: apps/admin
+
+      - name: 校验产物路径
+        run: |
+          set -euo pipefail
+          grep -oE '(src|href)="[^"]*"' apps/admin/dist/index.html
+          test -f apps/admin/dist/index.html
+          if grep -rl 'Program Files' apps/admin/dist/; then
+            echo '::error::产物中出现本机路径，必须重新构建'
+            exit 1
+          fi
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: admin-dist
+          path: apps/admin/dist
+          if-no-files-found: error
+
+  miniapp:
+    name: 小程序（生产构建）
+    runs-on: ubuntu-latest
+    env:
+      # 无微信开发者工具环境，跳过自动打开 IDE
+      SKIP_OPEN_DEVTOOLS: 'true'
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: ${{ env.PNPM_VERSION }}
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: pnpm
+          cache-dependency-path: apps/miniapp/pnpm-lock.yaml
+
+      - name: 准备环境变量
+        run: |
+          set -euo pipefail
+          mkdir -p env
+          cp env/.env.example env/.env
+        working-directory: apps/miniapp
+
+      - name: 安装依赖
+        run: pnpm install --frozen-lockfile
+        working-directory: apps/miniapp
+
+      - name: 构建
+        run: pnpm build:mp:prod
+        working-directory: apps/miniapp
+
+      - name: 校验产物
+        run: test -f apps/miniapp/dist/build/mp-weixin/app.json
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: miniapp-dist
+          path: apps/miniapp/dist/build/mp-weixin
+          if-no-files-found: error

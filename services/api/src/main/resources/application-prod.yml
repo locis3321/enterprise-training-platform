@@ -1,0 +1,36 @@
+# 生产配置：所有连接信息与密钥必须来自环境变量，缺失即启动失败
+spring:
+  datasource:
+    # 自建 MySQL（同机 Docker）通常未配证书：useSSL 默认关闭；
+    # 若数据库要求 TLS，设 MYSQL_USE_SSL=true 并把证书挂进 JVM truststore。
+    url: jdbc:mysql://${MYSQL_HOST}:${MYSQL_PORT:3306}/${MYSQL_DATABASE}?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&useSSL=${MYSQL_USE_SSL:false}&allowPublicKeyRetrieval=true&rewriteBatchedStatements=true
+    username: ${MYSQL_USERNAME}
+    password: ${MYSQL_PASSWORD}
+    hikari:
+      maximum-pool-size: ${DB_POOL_SIZE:20}
+      minimum-idle: 5
+      connection-timeout: 3000
+
+# P2-1：生产不暴露 API 文档。swagger-ui 与 /v3/api-docs 会完整枚举全部接口、
+# 参数与错误码，等于把攻击面清单公开；生产环境无需前端联调，直接关闭。
+springdoc:
+  api-docs:
+    enabled: false
+  swagger-ui:
+    enabled: false
+
+management:
+  endpoint:
+    health:
+      show-details: never
+
+app:
+  # 生产由 Nginx 反代：只有来自这些地址的 X-Forwarded-For 才可信，
+  # 否则真实客户端 IP 会变成 127.0.0.1，登录限流与审计都会失真。
+  security:
+    trusted-proxies: ${TRUSTED_PROXIES:127.0.0.1,::1}
+
+logging:
+  level:
+    root: warn
+    com.insurance.training: info
